@@ -32,7 +32,7 @@ searchguard.ssl.http.keystore_filepath: certs/node-0-keystore.jks\n\
 searchguard.ssl.http.keystore_password: changeit\n\
 searchguard.ssl.http.truststore_filepath: certs/truststore.jks\n\
 searchguard.ssl.http.truststore_password: changeit' \
-  >> $CONFIG_PATH
+  >> /elasticsearch/config/elasticsearch.yml
 
 # Override elasticsearch.yml config, otherwise plug-in install will fail
 ADD elasticsearch.yml /elasticsearch/config/elasticsearch.yml
